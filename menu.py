@@ -29,7 +29,6 @@ def mostrar_menu_calculadora() -> None:
     print("8. Calcular el factorial")
     print("9. Calcular todos los resultados")
     print("10. Salir")
-    print("11. Hola Mundo")
 
 def ejecutar_menu_calculadora() -> None:
     bandera_primer_numero = False
