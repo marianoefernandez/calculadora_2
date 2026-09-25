@@ -29,6 +29,7 @@ def mostrar_menu_calculadora() -> None:
     print("8. Calcular el factorial")
     print("9. Calcular todos los resultados")
     print("10. Salir")
+    print("11. Hola Mundo")
 
 def ejecutar_menu_calculadora() -> None:
     bandera_primer_numero = False
@@ -40,7 +41,7 @@ def ejecutar_menu_calculadora() -> None:
         #Para interactuar con el menu yo voy a utilizar un if-elif o un match
         #Segundo Paso --> Elegir que opcion del menu quiero
 
-        opcion = pedir_entero_rango(1,10,"Ingrese una opcion en el menu: ","ERROR, la opcion tiene que estar entre (1 y 10)")
+        opcion = pedir_entero_rango(1,11,"Ingrese una opcion en el menu: ","ERROR, la opcion tiene que estar entre (1 y 10)")
         limpiar_consola()
 
         #if-elif-else
@@ -53,6 +54,8 @@ def ejecutar_menu_calculadora() -> None:
         elif opcion == 10:
             print("SALIENDO DEL PROGRAMA")
             break
+        elif opcion == 11:
+            print("HOLA CHICOS COMO LES VA")
         elif bandera_primer_numero == False or bandera_segundo_numero == False:
             print("DEBE INGRESAR LOS NUMEROS PARA PODER CONTINUAR...")
         elif opcion == 3:
